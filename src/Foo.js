@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { FormGroup, Row, Col, Modal, Button, ControlLabel, Alert,  } from 'react-bootstrap';
+import React from 'react';
+import { FormGroup, Row, Col, Modal, Button, ControlLabel, Alert } from 'react-bootstrap';
 import { Control, Errors, actions } from 'react-redux-form';
 
-export class LoginModal extends Component {
+export class LoginModal extends React.Component {
 
     onHide() {
         const { dispatch } = this.props;

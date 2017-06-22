@@ -1,10 +1,12 @@
 import React from 'react';
+import ReactTestUtils from 'react-dom/test-utils'; 
 import { shallow, mount, render } from 'enzyme';
 import { modelReducer, formReducer, Control } from "react-redux-form";
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import LoginModal from '../Foo';
 import { FormGroup, Row, Col, Modal, Button, ControlLabel, Alert } from 'react-bootstrap';
+
 
 
 describe('A suite', function() {
