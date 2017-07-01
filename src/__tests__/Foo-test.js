@@ -36,18 +36,28 @@ describe('A suite', function() {
           </Provider>
       );
 
-      let loginModalChild = login.find(LoginModal);
-      let buttonChild = login.find(Button);
-      let buttonChild2 = loginModalChild.find(Button);
-      let inputChild = login.find(Control.text);
-      let alertChild = login.find(Alert);
-      let alertChild2 = loginModalChild.find(Alert);
-      console.log(loginModalChild);
-      console.log(buttonChild);
-      console.log(buttonChild2);
-      console.log(inputChild);
-      console.log(alertChild);
-      console.log(alertChild2);
+      // try to find button as simple DOM element in rendered component
+      let button1 = login.find('button').first();
+      console.log(button1);
+      button1.simulate('click');        // throw an error as we found nothing
+
+      // try to find button as Button element in rendered component
+      /*let button2 = login.find(Button).first();
+      console.log(button2);
+      button2.simulate('click');*/        // throw an error as we found nothing
+
+      // try to find button as simple DOM element in nested Modal
+      /*let modalChild = login.find(Modal).first();
+      let button3 = modalChild.find('button').first();
+      console.log(button3);
+      button3.simulate('click');*/        // throw an error as we found nothing
+
+      // try to find button as Button element in nested Modal
+      /*let modalChild = login.find(Modal).first();
+      let button4 = modalChild.find(Button).first();
+      console.log(button4);
+      button4.simulate('click');*/        // throw an error as we found nothing
+
   });
 
 });
