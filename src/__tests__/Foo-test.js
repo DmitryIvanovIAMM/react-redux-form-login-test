@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactTestUtils from 'react-dom/test-utils'; 
+import ReactTestUtils from 'react-dom/test-utils';
 import { shallow, mount, render } from 'enzyme';
 import { modelReducer, formReducer, Control } from "react-redux-form";
 import { applyMiddleware, combineReducers, createStore } from 'redux';
@@ -27,7 +27,7 @@ describe('A suite', function() {
           test: modelReducer('login', { initialState }),
       }));
 
-      const login = mount(
+      const login = shallow(
           <Provider store={store}>
               <LoginModal
                   dispatch={store.dispatch}
