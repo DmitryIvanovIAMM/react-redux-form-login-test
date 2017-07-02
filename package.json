@@ -10,22 +10,8 @@
   ],
   "main": "build/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vjwilson/enzyme-example-jest"
-  },
-  "author": "Leland Richardson <leland.richardson@airbnb.com>",
-  "contributors": [
-    "Leland Richardson <leland.richardson@airbnb.com>",
-    "Van J. Wilson <van.wilson1992@alumni.unc.edu>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vjwilson/enzyme-example-jest/issues"
-  },
-  "homepage": "https://github.com/vjwilson/enzyme-example-jest#readme",
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-jest": "^20.0.3",
@@ -38,9 +24,14 @@
     "jest-cli": "20.0.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-icons": "^2.2.5",
+    "react-modal": "^2.2.1",
     "react-redux": "^5.0.5",
     "react-test-renderer": "^15.6.1",
-    "redux": "^3.7.0"
+    "redux": "^3.7.0",
+    "redux-changes": "^0.2.0",
+    "redux-thunk": "^2.2.0",
+    "sinon": "^2.3.6"
   },
   "dependencies": {
     "react-bootstrap": "^0.31.0",
